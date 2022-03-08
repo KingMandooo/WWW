@@ -1,0 +1,79 @@
+<!DOCTYPE html>   << -- "이 문서는 html5를 기반으로 한 문서다'' 라는 뜻 .
+<html>                  <<-- <html> ~ </html> "이 사이까지 html 문서다" 라는 뜻이다.
+<head>                           이와 마찬가지로 <head> ~ </head> //<body> ~ </body> 이렇게 열린태그 닫힌 태그로 이루어져있다. 
+<meta charset="UTF-8">           예외로 <hr>와 같이 혼자 사용되는 태크가 있다. ( 이건 외워야함) <-- 찾아봐
+<title>웹 페이지의 구성 요소</title>                           meta 태크 hr 태크 h태크 br 태크
+</head>
+<body>
+<h3>Elvis Presley</h3>   <-- 제목을 의미 3은 글자 크기를 의미 ( 0~6 까지있음 )
+<hr>
+He was an American singer and actor. In November 1956,<br> < -- 줄을 바꿔줌
+he made his film debut in <span>Love Me Tender</span>.          <--- text를 구분짓기 위해 영역을 만들어둔거임.
+He is often referred to as "<span>the King of Rock and Roll</span>".
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>웹 페이지의 구성 요소</title>
+<style>
+	body { background-color : linen; color : green;
+			margin-left : 40px; margin-right : 40px; }
+	h3 { text-align : center; color : darkred; }
+	hr { height : 5px; border:solid grey;
+			background-color : grey; }                                <-- 이게 css ( 페이지를 이쁘게 꾸며줌 )
+	span {color : blue; font-size : 20px; }
+</style>
+</head>
+<body>
+<h3>Elvis Presley</h3>
+<hr>
+He was an American singer and actor. In November 1956,
+he made his film debut in <span>Love Me Tender</span>.
+He is often referred to as "<span>the King of Rock and Roll</span>".
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>웹 페이지의 구성 요소</title>
+<style>
+	body { background-color : linen; color : green;
+				margin-left : 40px; margin-right : 40px;}
+	h3 { text-align : center; color : darkred;}
+	hr { height : 5px; border : solid grey;
+				background-color : grey }
+	span { color: blue; font-size: 20px; }
+</style>
+<script>
+	function show() { // <img>에 이미지 달기
+		document.getElementById("fig").src = "ElvisPresley.png"
+	}
+	function hide() { // <img>에 이미지 제거                                    <--- 이게 자바스크립트  행동하게 
+		document.getElementById("fig").src= "";
+	}
+</script>
+</head>
+<body>
+<h3 onmouseover="show()" onmouseout="hide()">Elvis Presley</h3>
+<hr>
+<div><img id="fig" src=""></div>
+He was an American singer and actor. In November 1956,
+he made his film debut in <span>Love Me Tender</span>.
+He is often referred to as "<span>the King of Rock and Roll</span>".
+</body>
+</html>
