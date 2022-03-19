@@ -245,8 +245,8 @@
     정의 리스트 전체는 <dl>을, 아이템의 용어는 <dt>를, 아이템의 설명은 <dd> 로 표현한다.
     
     <dl>
-        <dt>용어</dt>    <-- </dl>, </dd> 생략 가능
-        <dd>설명</dd>
+        <dt>용어</dt>    <-- </dl>, </dd> 생략 가능        <dt> = Definition Title 
+        <dd>설명</dd>                                     <dd> = Definition Data
     </dl>
 
 🟢 표 만들기, <table>     ❗❗❗❗이건 유튜브 보고 더 배우자 너무 어렵다.❗❗❗❗❗  p.81보기..!
