@@ -288,7 +288,7 @@
  
  🟢 하이퍼링크 만들기, <a>   a = anchor
     
-    🔷 href 속성
+    🔷 href 속성 (hypertext reference)            *reference 뜻: 참고, 언급, 관련
        --> 하이퍼링크로 이동할 HTML 페이지의 URL은 <a> 태그의 href 속성에 지정한다.
            같은 사이트의 HTML 페이지를 연결하는 경우, href에는 다음과 같이 HTML파일의 경로명만 지정하면된다.  <-- 책 p.83
            
