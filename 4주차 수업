@@ -25,7 +25,7 @@
        🎈🎈 웹 문서를 구조화하여 의미 있는 내용 탐색이 용이한 웹을 시맨틱 웹(semantic web)이라고 하며 
             <header>, <section>, <article>, <main>, <summary>, <mark>, <time> 등의 태그를 시맨틱 태그라고 한다.
    
-🟢 HTML5 문서의 구조와 시맨트 태그              
+🟢 HTML5 문서의 구조와 시맨틱 태그              
    
    🔶 <header>                                                                                                  *simantic 뜻: 의미론적인
    --> 페이지나 섹션의 머리말을 표현하는 태그이다.
