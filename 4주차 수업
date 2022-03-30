@@ -82,11 +82,12 @@
    🔶 <figure>                     
    --> 본문에 삽입된 그림을 블록화하는 시맨틱 태그이다.
        
-       <figure> <\figure> 태그 안에 있는 건 그림화가 되는 것 같다.           ✅ figure 시맨틱 태그는 img 태그와 그 이미지를 설명하는 figcaption 태그를 묶어 놓은 태그이다.
-       이 태그 내에 그림 제목은 <figcaption> 태그로 작성하면 된다.               figcaption 태그의 이미지에 시각적인 설명을 추가하는 것이다.
+       <figure> <\figure> 태그 안에 있는 건 그림화가 되는 것 같다.          
+       이 태그 내에 그림 제목은 <figcaption> 태그로 작성하면 된다.              
          
   <figure>
     <figcaption>그냥 사진</figcaption>
+    
     <pre>
         하                 이건 그냥 블록사진
         하
@@ -95,7 +96,15 @@
         <img src="자료/미국.jpg" width="500">
     </pre>
   </figure>
- 
+  
+  ❗❗✅ figure 시맨틱 태그는 img 태그와 그 이미지를 설명하는 figcaption 태그를 묶어 놓은 태그이다.
+      figcaption 태그의 이미지에 시각적인 설명을 추가하는 것이다.
+  
+  기사를 보면 사진 아래에 짤막한 설명이 들어있는 경우가 있다. 그럴 경우 이 태그를 사용한다.
+  결국 설명이 필요한 사진이 있을 경우 이 태그를 쓰면 되는 듯하다.
+  
+  
+    
    🔶 <details>와 <summary>
    --> <details>는 상세 정보를 담는 시멘트 블록 태그이다.
        핸들(▶)이 나타나고, 사용자가 핸들을 클릭하여 상세 정보를 감추거나 보이게 할 수 있다.
@@ -116,6 +125,8 @@
 </details>
 
 ❗❗❗❗❗❗ <details> 태그 하나 당 <summary> 태그도 하나만 들어간다. (내가 해본 결과...)
+       
+       <details>태그 안에 하나의 <summary>태그와 그 뒤에 추가적인 태그로 구성된다. (출처:https://abcdqbbq.tistory.com/96)
        
        
     <details>
@@ -150,8 +161,8 @@
               
               출처: https://miaow-miaow.tistory.com/51   <-- 더 자세히 나와있음 / 구글 검색엔진과 관련돼서 설명해줌.
     
-    * <meter>  -  주어진 범위나 % 의 데이터 양 표시 
-    * <progress>  -  작업의 진행 정도 표시
+    * <meter>  -  주어진 범위나 % 의 데이터 양 표시    /    수치
+    * <progress>  -  작업의 진행 정도 표시            /     진행도
  
  
 <marK>게임 난이도</marK> <br>
