@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Page</title>
+</head>
+<body>
+
+    <!-- Form Page -->
+<table border="1" align="center" width="700">
+<tr>
+    <td>
+    <h1 align="center">Form Page</h1>
+
+<!-- 1. Site Registration -->
+<h2>1. Site Registration</h2>
+
+<table>
+    <tr>
+        <td align="right">
+        Username:  <input type="text" size="20" value="홍길동" >
+        </td>
+    </tr>
+
+    <tr>
+        <td align="right">
+         Password:  <input type="password" size="20" value="•••••••">
+        </td>
+    </tr>
+
+    <tr>
+         <td align="right">
+        Retype password: <input type="password" size="20" value="•••••••">
+         </td>
+    </tr>
+
+    <tr>
+        <td align="right">
+         Email address: <input type="email" size="20" value="abc@defg.hi"> 
+         <td>
+    </tr>
+
+    <tr>
+         <td align="right">
+         Retype email address: <input type="email" size="20" value="abc@defg.hi">
+         </td>
+    </tr>
+</table>
+
+<!-- 2. Personal Information -->
+<h2>2. Personal Information</h2>
+<table align="center">
+    <tr>
+        <td align="right">
+            Sex: 
+        </td>    
+        <td>
+            <input type="radio" value="1" align="center">Male 
+            <input type="radio" value="1">Female <br>
+        </td>
+    </tr>         
+
+    <tr>
+        <td align="right">
+            Birthday:  
+        </td>
+        <td>
+            <input type="number" min="1900" max="2022" step="1" value="2022">
+            <input type="number" min="1" max="12" step="1" value="4">
+            <input type="number" min="1" max="31" step="1" value="1">
+        </td>
+    </tr>
+
+    <tr>
+        <td align="right">
+            State: 
+        </td>
+        <td>
+            <select name="state">
+                <option value="1">New york</option>
+                <option value="2">Seoul</option>
+                <option value="3" selected>Ohio</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td align="right">
+        Country: 
+        </td>
+        <td>
+            <select name="country" size="">
+                <option value="1" selected>Korea</option>
+                <option value="2">Japan</option>
+                <option value="3">Ohio</option>
+                <option value="3">oooooooooooooo</option>
+            </select>
+        </td>
+    </tr>
+ </table>
+
+ <!-- 3. Survey -->
+<h2>3. Survey</h2>
+<table align="center">
+ <tr>
+     <td >
+        <ul>
+            <li>Please check all the emotions that apply to you:
+                <ul>
+                    <li>Angry <input type="checkbox" value="1"></li>
+                    <li>Sad <input type="checkbox" value="2"></li> 
+                    <li>Happy <input type="checkbox" value="3"></li> 
+                    <li>Ambivalent <input type="checkbox" value="4"></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li>How satisfied were you with our service?
+                <ul>
+                    <li>Very satisfied <input type="radio" value="1"></li>
+                    <li>Satisfied <input type="radio" value="2"></li> 
+                    <li>Didn't care <input type="radio" value="3"></li> 
+                    <li>Dissatisfied <input type="radio" value="4"></li>
+                    <li>Very dissatisfied <input type="radio" value="5"></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li>Further comments: <textarea cols="30" rows="3"></textarea></li>
+            <li>Bio photo: <input type="button" value="파일 선택"> 선택된 파일 없음</li>
+            <li>Location visited: 
+                <select name="Select location">
+                    <option value="1">New york</option>
+                    <option value="2">Seoul</option>
+                    <option value="3">Ohio</option>
+                    <option value="4" selected>Select location</option>
+                </select></li>
+        </ul>
+    </td>
+</tr>
+</table>
+
+<!-- submit -->
+<p  align="center">
+<button type="submit">submit</button>
+</p>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
