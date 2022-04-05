@@ -13,43 +13,57 @@
     <h1 align="center">Form Page</h1>
 
 <!-- 1. Site Registration -->
-<h2>1. Site Registration</h2>
 
 <table>
+    <tr><td colspan="2"><h2>1. Site Registration</h2></td></tr>
     <tr>
-        <td align="right">
-        Username:  <input type="text" size="20" value="홍길동" >
+        <td align="right" >
+        Username:  
+        </td>
+        <td>
+            <input type="text" size="20" value="홍길동" >
         </td>
     </tr>
 
     <tr>
         <td align="right">
-         Password:  <input type="password" size="20" value="•••••••">
+         Password: 
+        </td>
+        <td>
+            <input type="password" size="20" value="•••••••">
         </td>
     </tr>
 
     <tr>
          <td align="right">
-        Retype password: <input type="password" size="20" value="•••••••">
+        Retype password: 
          </td>
-    </tr>
-
-    <tr>
-        <td align="right">
-         Email address: <input type="email" size="20" value="abc@defg.hi"> 
          <td>
+            <input type="password" size="20" value="•••••••">
+         </td>
+    </tr>
+
+    <tr>
+        <td align="right">
+         Email address: 
+        </td>
+        <td>
+            <input type="email" size="20" value="abc@defg.hi"> 
+        </td>
     </tr>
 
     <tr>
          <td align="right">
-         Retype email address: <input type="email" size="20" value="abc@defg.hi">
+         Retype email address:
+         </td>
+         <td>
+            <input type="email" size="20" value="abc@defg.hi">
          </td>
     </tr>
-</table>
 
 <!-- 2. Personal Information -->
-<h2>2. Personal Information</h2>
-<table align="center">
+<tr><td colspan="2"><h2>2. Personal Information</h2></td></tr>
+
     <tr>
         <td align="right">
             Sex: 
@@ -101,6 +115,7 @@
 
  <!-- 3. Survey -->
 <h2>3. Survey</h2>
+
 <table align="center">
  <tr>
      <td >
