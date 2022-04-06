@@ -104,7 +104,7 @@ valign는 높이를 기준으로 합니다.
     
 -
     
-        <table border="1" width="400" height="300" align="center">
+        <table border="1" width="400" height="300" align="center">   <-- 🎈🎈 table에 height 속성으로 높이를 조절
  
         <tr valign="top">                 <-- valign 속성 
             <td>2행 1열</td> 
