@@ -6,4 +6,137 @@
 
  --> HTML 문서에 색이나 모양, 출력 위치 등 외관을 꾸미는 언어이며, CSS로 작성된 코드를 스타일 시트(style sheet)라고 부른다.
  
-🔶 
+🔶 CSS3 스타일 시트 구성
+
+-->  span { color : blue; font-size : 20px; }   /* span 태그 스타일 선언 */
+    셀렉터  프로퍼티  값    프로퍼티     값
+    
+🔷 셀렉터와 태그 
+
+--> 셀렉터(selector)는 CSS3 스타일 시트의 이름이나 규칙이다.
+    위의 span 셀렉터에 의해 HTML 페이지의 모든 <span> 태그에 'color: blue; font-size: 20px;'의 스타일이 적용된다.
+    
+🔷 스타일 시트 블록
+
+--> CSS3 스타일 시트는 중괄호 {} 를 이용하여 작성한다.
+
+🔷 프로퍼티와 값
+
+--> 각 CSS3 스타일은 '프로퍼티 : 값'의 쌍으로 표현되며 세미클론; 으로 분리된다.
+    마지막 세미콜론은 생략할 수 있다.
+    
+    현재는 약 200개 정도의 프로퍼티가 있으며 계속 생겨나게 될 것이다.
+    
+🔷 주석문
+
+--> 스타일 시트 내에 사용되는 주석문은 /* ... */ 로 만든다.    <body> 태그의 주석문은 <!--  ...  --> 이다.
+
+     <style>
+        nav {color:violet; /*주석문*/}
+    </style>
+
+🔷 대소문자 구분 없음
+
+--> 셀렉터, 프로퍼티, 값은 모두 대소문자를 구분하지 않는다.
+
+
+🟢 CSS3 스타일 시트 만들기
+    
+    * <style></style> 태그에 스타일 시트 작성
+    * style 속성에 스타일 시트 작성
+    * 스타일 시트를 별도 파일로 작성하고, <link> 태그나 @import로 불러 사용
+
+🔶 <style> 태그로 스타일 시트 만들기
+
+-->
+     <style>
+        body {background-color:antiquewhite;}
+        h1 {color:blueviolet; font-size:20px;}
+        header { background-color: darkseagreen; text-align: center;}
+    </style>
+    
+    <style>
+        li {color: deeppink;}
+        hr {border : 3px solid purple;}
+    </style>
+  
+  * <style> 태그는 반드시 <head> 태그 내에서만 작성 가능하다.
+  * <style> 태그는 여러 번 작성 가능하며 스타일 시트들이 합쳐 적용된다.
+  * <style> 태그에 작성된 스타일 시트는 웹 페이지 전체에서 적용된다.
+  
+🔶 style 속성에 스타일 시트 만들기
+
+-->  HTML 태그의 style 속성에 CSS3 스타일 시트를 작성할 수 있다.
+
+<h2  style="color:darkorange; font-size:25px;" title="너무 어렵다으아">나에 대하여..힣</h2>   -->  <h2> 의 글자를 25픽셀 크기의 darkorange 색깔로 꾸며주었다.
+
+
+🔶 외부 스타일 시트 파일 불러오기
+
+-->  CSS3 스타일 시트만 때어내어 .css 확장자를 가진 파일에 저장해놓고, 필요한 웹 페이지에서 불러 사용할 수 있다.
+     이로써 동일한 CSS3 스타일을 웹 페이지마다 중복 작성하는 불편함을 해소하고, 웹 사이트의 전체 웹페이지 모양에 일관성을 준다.
+     
+     여기에는 두 가지 방법이 있다.
+     * <link> 태그 이용
+     * @import 이용
+     
+     🔷 <link> 태그 이용
+     
+       --> <link> 태그는 <head>에서만 사용되며 종료 태그가 없다.
+       
+       <head>
+       <link href="index.css" type="text/css" rel="stylesheet">
+       </head>
+       
+     🔷 @import 이용   <-- 이게 더 쉽고 더 나아보인다아아아앙ㅇㅇ아아앙
+     
+     --> <style> 안에서만 사용되고 여러 번 사용할 수 있다.
+     
+     <style>
+          @import url(index.css);
+          /* @import url('index.css'); 로 해도된다.*/
+          /* @import url "index.css"; 로 해도된다.*/
+     </style>
+
+
+🔶 CSS3 규칙
+
+  🔷 CSS3 스타일은 부모 태그로부터 상속된다.
+  
+    <details style="font-size:20px;">                         <-- <details> 태그의 폰트 크기를 20px로 설정
+            <summary style="color:fuchsia">음식!!</summary>   <-- <summary> 태그에 색깔을 입힘 그리고 부모 태그인 <details> 태그의 폰트 크기를 상속받음
+                음식: <mark>치킨</mark> <br>
+                시간: <time style="color:darkcyan">2022.03.30/15:46</time><br> <-- <time> 태그에 색깔을 입힘 그리고 부모 태그인 <details> 태그의 폰트 크기를 상속받음
+                정도: <meter value="9.5" max="10.0"></meter><br>
+                게이지: <progress value="30" max="100"></progress>
+     </details>
+     
+     
+   
+    
+  🔷 스타일 합치기 (cascading)와 오버라이딩(overriding) 
+  
+  --> 각 태그에는 다음 4가지 종류 스타일 시트가 동시에 적용될 수 있다.
+                                                                   * 브라우저의 디폴트 스타일
+                                                                   * .css 스타일 시트 파일에 작성된 스타일
+                                                                   * <style> 태그에 작성된 스타일
+                                                                   * style 속성에 작성된 스타일
+
+ 스타일 합치기 (cascading): 앞의 4가지 스타일 시트가 태그에 동시에 적용될 때 스타일이 합쳐져서 적용됨을 말한다.
+                           하지만 여러 스타일 시트들이 하나의 태그에 중첩되어 동일한 CSS3 프로퍼티에 서로 다른 값을 설정하는 충돌이 발생하기도 한다.
+                           
+ 스타일 오버라이딩 (overriding): 덮어쓰기. 동일한 CSS3 프로퍼티에 서로 다른 값을 설정하는 충돌 시 우선순위가 높은 스타일을 적용하는 규칙.
+                                       
+                 style 속성에 작성된 스타일 --> <style> 태그에 작성된 스타일 --> .css 스타일 시트 파일에 작성된 스타일 --> 브라우저의 디폴트 스타일
+
+
+
+🟢 
+
+
+
+
+
+
+
+
