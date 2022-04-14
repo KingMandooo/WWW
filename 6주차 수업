@@ -133,8 +133,45 @@
 
 🟢 셀렉터
 
+ --> 셀렉터(selector)는 HMTL 태그의 모양을 꾸밀 스타일 시트를 선택하는 기능이다.
+
+     <style>
+        li {color: deeppink;}            <-- li는 셀렉터 이름이며, color: deeppink 스타일을 웹 페이지의 모든 <li> 태그에 적용한다.
+    </style>
 
 
+🔶 태그 이름 셀렉터
+
+   h1, mark {color:blueviolet; font-size:20px;}  -->  셀렉터 h1와 mark를 만든 사례이다.
+                                                      셀렉터는 콤마, 로 분리한다.
+                                                      HTML 페이지에 있는 모든 <h1> 태그와 <mark> 태그에  color:blueviolet와 font-size:20px 스타일을 적용시켰다.
+
+                                                     
+🔶 class 셀렉터 
+
+--> 셀렉터 이름 앞에 점. 을 붙인 경우, 이 셀렉터는 HTML 태그의 class 속성으로만 지정할 수 있다.
+    그래서 이를 class 셀렉터라고 한다.
+
+
+    <style>
+        .weather {color:deepskyblue;}
+    </style>
+                   .
+                   .
+                   .
+                   
+    <caption class="weather">오늘의 날씨</caption>
+
+------------------------------------------------------------------
+
+     만약   <style>
+                 caption.weather {color:deepskyblue;}  <-- 이렇게 caption.weather 처럼 태그 이름과 함께 만들어진 경우 해당 태그, 즉 <caption>에 제한된다.
+            </style>                                       그니까 다른 태그에 class="weather" 속성을 넣어봤자 적용이 안된다는 뜻이다.
+                                                           오직 <caption>에만 class="weather"이 적용되는 것이다.                  
+  
+
+
+🔶 id 셀렉터
 
 
 
