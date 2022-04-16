@@ -264,7 +264,7 @@
      <button type="button">버튼</button>
    
   
-     input type="image" src="병아리/사지인.jpg" alt="이미지 버튼">                           <-- 두 버튼 스타일이 다름
+     <input type="image" src="병아리/사지인.jpg" alt="이미지 버튼">                           <-- 두 버튼 스타일이 다름
      <button type="button"><img src="병아리/사지인.jpg" alt="이미지 버튼"></button>
 
       
