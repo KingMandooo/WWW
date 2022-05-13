@@ -1,0 +1,65 @@
+💙 CSS3 고급 활용
+  
+  --> HTML 태그가 출력되는 모양은 항상 박스(box model)라는 점을 기억해야한다.
+   
+   * 배치
+   * 리스트 꾸미기
+   * 표 꾸미기
+   * 폼 꾸미기
+   * 애니메이션 등 동적 변화 만들기
+
+🟡 배치
+
+🟢 블록 박스와 인라인 박스
+
+* 블록 태그 사례 : <p>, <hl>, <div>, <ul>
+* 인라인 태그 사례 : <span>, <a>, <img>
+
+
+🟢 박스의 유형 제어, display
+
+ 🟠 display 프로퍼티
+ 
+  * 블록 박스 : display : block
+  * 인라인 박스 : display : inline            <-- 인라인 박스는 width, hegiht, padding, margin 등 크기 조절이 불가능하다.
+  
+  * 인라인 블록 박스 : display : inline-block    <-- 인라인 블록 박스는 인라인 속성과 블록 속성이 합쳐져 있다. 크기 조절이 가능하다.
+ 
+ 🟠 display:block
+ 
+   --> 블록 박스의 성질을 가지게 됨
+   
+ 🟠 display:inline 
+  
+   --> 인라인 박스의 성질을 가지게 됨
+ 
+ 🟠 display:inline-block
+  
+   --> 블록 박스와 인라인 박스의 성질을 가지게 됨
+   
+   
+  
+ 🟢 박스의 배치, position
+ 
+  --> 브라우저는 웹 페이지에 나타난 순서대로 HTML 태그를 배치한다. 이를 normal flow라고 부른다.
+      position 프로퍼티를 이용하면 normal flow를 무시하고 원하는 위치에 박스를 배치할 수 있다.
+      
+      🎈 normal flow 란?
+            --> 일반적인 상황에서 각의 요소들의 성질에 따라 배치 되는 순서(흐름)
+                예를 들면, block 레벨 요소들은 상하로 배치되고, inline 레벨 요소들은 좌우로 배치되는 것
+                
+                출처: https://velog.io/@imyourgenie/1.-HTMLCSS%EC%9D%98-%EA%B8%B0%EC%B4%88-7-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%832
+      
+      * 정적 배치 - position : static (디폴트)
+      * 상대 배치 - position : relative
+      * 절대 배치 - position : absolute
+      * 고정 배치 - position : fixed
+      * 유동 배치 - float : left 혹은 float : right
+   
+  🟠 정적 배치, position:static
+  
+   --> 디폴트 배치 방식이지만, 정적 배치에서는 left, top, bottom, right 프로퍼티의 값은 위치에 영향을 주지 않는다.
+   
+  🟠 상대 배치, position:relative
+  
+   --> 
