@@ -62,4 +62,100 @@
    
   🟠 상대 배치, position:relative
   
-   --> 
+   --> normal flow에 따라 HTML 태그가 출력되는 위치를 '기본 위치'라고 한다.
+       position:relative 스타일이 주어지면, 태그는 '기본 위치'에서 left, top, bottom, right 프로퍼티의 값만큼 이동 한 '상대 위치'에 배치된다.
+       
+       top과 bottom이 동시에 지정되면 bottom이 무시되고, 
+       left와 right이 동시에 지정되면 right이 무시된다.
+       
+       
+div {
+    border: 1px solid darkblue;
+    width: 100px;
+    padding: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+#t1 {
+    position: relative;        <-- relative를 지정해주지 않으면 아래의 top,left, right은 아무런 영향이 없다.
+    top: 100px;
+    left: 100px;
+    right: 60px;         <-- right 값 무시
+}
+
+#t2 {
+    position: relative;
+    top: 160px;
+    left: 100px;
+    bottom: 300px;     <-- bottom 값 무시
+}
+
+
+  🟠 절대 배치, position:absolute
+
+----------------HTML--------------------
+
+  <div id="t2">
+        <p id="f1">그래</p>
+        <p id="f2">잘가</p>
+        <p id="f3">안녕</p>
+    </div>  
+    
+---------------CSS---------------------
+
+div {
+    border: 1px solid darkblue;
+    width: 100px;
+    padding: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+p {
+    border: 1px solid firebrick;
+}
+
+#f1 {
+    position:absolute;  
+    top: 10px;
+    right: 30px;
+}
+
+#f2 {
+    position:absolute;
+    bottom: 100px;
+    left: 100px;
+}
+
+#f3 {
+    position:absolute;
+    top: 100px;
+    right: 60px;
+}
+  
+  
+  🟠 고정 배치, position:fixed
+  
+   --> 고정 배치는 절대 배치와 달리 뷰트(viewport, 브라우저의 보이는 영역)에 고정시켜 브라우저에 항상 보이게 한다.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
