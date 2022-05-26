@@ -1,0 +1,379 @@
+/* 홈페이지 */
+body {
+    width: 1200px;
+    border: 7px solid darkgoldenrod;
+    margin: auto;
+    background-color: ghostwhite;
+}
+
+header {
+    text-align: center;
+    background-color:indianred;
+    padding: 30px;
+}
+
+section {
+    background-color:darkcyan;
+}
+
+h2  {
+    text-align: center;
+}
+
+/* 홈페이지 이름 */
+#Home {
+    color :antiquewhite;
+    text-shadow: 1px 2px 2px black, 0 0 2px red, 3px 5px 8px green;
+    text-align: center;
+}
+
+/* 목차 */
+nav {
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+nav ol { 
+    text-align: center;
+}
+
+nav li { 
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav li:hover{
+    background-color: rgb(156, 123, 231);
+}
+
+nav a:hover {
+    color:black;
+}
+
+ol div {
+    border: 2px solid darkmagenta;
+}
+
+#m1, #m2, #m3, #m4, #m5, #m6, #m7, #m8, #m9, #m10, #m11, #m12{
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    margin: 5px;
+}
+
+#m1:hover, #m2:hover, #m3:hover, #m4:hover, #m5:hover, #m6:hover, #m7:hover, #m8:hover, #m9:hover, #m10:hover,
+#m11:hover, #m12:hover
+{
+    text-shadow: 20px 10px 10px firebrick;
+    box-shadow: 5px 5px 5px darkmagenta;
+}
+
+#m12 {
+    background-color: brown;
+}
+
+/* 1. 좌우명 */
+
+#좌우명 {
+    padding:30px;
+}
+#명언 {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkseagreen;
+    text-align: center;
+}
+
+div p {
+    border-radius: 45px;
+    display: inline-block;
+}
+#r1 {
+    border: 5px solid red;
+}
+
+#r2 {
+    border: 5px solid darkblue;
+}
+
+#r3 {
+    border: 5px solid darkorchid;
+}
+
+/* 2. 내가 다닌 학교 */
+#school {
+     display: inline-block;
+     padding: 23px;
+     width: 350px;
+     text-align: center;
+    }
+
+#sun_school {
+    background-color: darkseagreen;
+}
+
+#school a {
+        text-decoration: none;
+    }
+    
+#school a > p {
+    border: 3px solid salmon;
+    background-color: chocolate;
+    padding: 20px;
+    color:azure;
+    font-size: 20px;
+}
+
+#school a > p:hover {
+    color: blue;
+    background-color: darkkhaki;
+}
+
+
+/* 좋아하는 것 */
+
+#favorite {
+    background-color: darkseagreen;
+    font-weight: bold;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-size: 30px;
+    text-align: center;
+}
+
+figure p{
+    display: inline-block;
+    margin: 30px;
+    text-align: center;
+}
+
+#선수:hover {
+    background-color: rgb(196, 58, 58);
+    color:rgb(20, 20, 224)
+}
+
+#영화:hover {
+    background-color:blueviolet;
+    color:chocolate;
+}
+
+#게임:hover {
+    background-color:burlywood;
+    color:sienna;
+}
+
+figure > p:hover {
+    color:lawngreen;
+}
+
+/* 이수 과목 */
+#이수과목 {
+    text-align: center;
+}
+
+#시간표 {
+    background-color: darkseagreen;
+    padding: 20px;
+    font-size: large;
+}
+
+#t1:hover, #t2:hover, #t3:hover, #t4:hover, #t5:hover, #t6:hover {
+    background-color: cornflowerblue;
+    color:gold
+}
+
+#myclass {
+    background-color: gainsboro;
+}
+
+/* 뮤직비디오 */
+
+#BTS {
+    padding: 40px;
+    text-align: center;
+    background-color:darkseagreen ;
+}
+
+#BTS_link{
+    text-align: center;
+    border: 3px solid salmon;
+    width: 500px;
+    padding: 30px;
+    font-weight: bold;
+}
+
+#BTS_link a {
+    text-decoration: none;
+}
+
+#BTS_link a:visited {
+    color:crimson
+}
+
+#BTS_link:hover {
+    background-color:khaki;
+}
+
+#BTS_link a:hover {
+    color:mediumslateblue;
+}
+
+
+/* 추천 음악 */
+
+#music {
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+#오디오 { 
+    font-weight: bold;
+}
+
+#오디오:hover {
+    color:darkviolet;
+}
+
+/* 추천 사이트 */
+#site {
+    text-align: center;
+    padding: 30px;
+    background-color: darkseagreen;
+}
+
+#site2{
+    display: inline-block;
+}
+
+#site3{
+    display: inline-block;
+}
+
+/* 버킷리스트 */
+#희망 {
+    background-color: darkseagreen;
+    padding: 40px;
+    width: 1120px;
+    text-align: center;
+}
+
+#버킷리스트 div {
+    display: inline-block;
+}
+
+#bklist1 > ul, #bklist2 > ul, #bklist3 > ul {
+    list-style: none;
+    text-align: left;
+}
+
+#bklist1 > ul:hover {
+    background-color: firebrick;
+    color:azure
+}
+
+#bklist2 > ul:hover {
+    background-color:blue;
+    color:azure
+}
+
+#bklist3 > ul:hover {
+    background-color: darkorchid;
+    color:azure
+}
+
+/* 인상 깊이 읽은 책 */
+
+#books {
+    background-color: darkseagreen;
+    padding: 30x;
+    width:1200px;
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#books p:hover{
+    box-shadow: 10px 10px 5px darkslateblue,
+                0 0 25px blueviolet,
+                0 0 5px darkblue;
+    color:darkorchid
+}
+
+/* 강아지 사진 */
+#maru {
+    background-color: darkseagreen;
+    padding: 10px;
+    background-image: url("files/배경사진.jpg");
+}
+
+#maru div {
+    display: inline-block;
+}
+
+#dog1, #dog2, #dog3, #dog4{
+    font-weight: bold;
+    vertical-align: top;
+}
+
+#dog1:hover, #dog2:hover, #dog3:hover, #dog4:hover {
+    background-color: palevioletred;
+}
+
+/* 글 쓰는 공간 */
+#writing {
+    background-color: darkseagreen;
+    padding: 40px;
+}
+
+#w1 {
+    display: inline-block;
+    background-color: bisque;
+    font-weight: bold;
+}
+
+#w2 {
+    display: inline-block;
+    background-color: bisque;
+    font-weight: bold;
+}
+
+#writing input[type=text] {
+    color:blue
+}
+
+/* footer */
+#end {
+    text-align: center;
+    padding: 30px;
+    background-color: indianred;
+    font-weight: bold;
+    font-size: 20px;
+    color :antiquewhite;
+    text-shadow: 1px 2px 2px black, 0 0 2px red, 3px 5px 8px green;
+}
+
+#end a {
+    text-decoration: none;
+    color:yellow
+}
+
+#end a:visited {
+    color:yellow
+}
+
+#end a:hover {
+    color:darkslateblue
+}

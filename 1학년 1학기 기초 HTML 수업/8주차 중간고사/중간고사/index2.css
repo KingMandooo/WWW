@@ -1,0 +1,117 @@
+body {
+    margin: auto;
+    width: 800px;
+    border: 10px solid white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    text-shadow: 2px 5px 3px darkblue, 5px 3px 3px darkviolet, 0 0 3px firebrick;
+}
+
+nav {
+    background-color: gray;
+    color: white;
+    padding: 5PX;
+    text-align: center;
+}
+
+section {
+    background-color: aqua;
+    padding: 10px;
+}
+
+footer {
+    background-color: lightcoral;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/* 목차 */
+li > a {
+    color:white;
+    text-decoration: none;
+}
+
+li > a:visited {
+    color: white;
+}
+
+#목차_65 li {
+    text-align: center;
+    vertical-align: top;
+    list-style: none;
+    display: inline-block;
+    width: 200px;
+    margin: 3px;
+}
+
+#목차_65 li:hover {
+    background-color: lightgray;
+}
+
+#목차_65 a:hover {
+    color: black;
+}
+
+/* 소제목들 */
+#학과장점_65 h3, #학과자격증_65 h3, #학과연구동아리_65 h3 {
+    text-shadow: 1px 1px blue;
+}
+
+/* 학과장점 */
+#학과장점_65 ol {
+    list-style-type: decimal-leading-zero;
+}
+
+/* 학과자격증 */
+
+/* 학과연구동아리 */
+#동아리이름_65 td {
+    padding: 10px;
+    border: 1px solid black;
+    width: 300px;
+}
+
+#이름풀이_65 td {
+    padding: 10px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+#동아리이름_65 {
+    background-color: gray;
+    text-align: center;
+}
+
+#내용_65 td {
+    border-bottom: 1px dotted black;
+    border-right: 1px dotted black;
+    border-left: 1px dotted black;
+    padding: 10px;
+    vertical-align: top;
+}
+
+#이름풀이_65 {
+    background-color: lightgray;
+}
+
+span {
+    text-shadow: 1px 1px red, 1px 1px black;
+}
+
+/* 구분선 */
+#구분선_65 > hr { 
+    width: 28%;
+    display: inline-block;
+}
+
+#구분선_65 {
+    text-align: center;
+}
