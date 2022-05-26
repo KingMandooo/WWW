@@ -1,0 +1,67 @@
+/* ------------------------실습2--------------------------- */
+/* 1.페이지 */
+body {
+    width: 800px;
+    margin: 10px auto;
+}
+
+/* 2.제목 */
+header {
+    text-align: center;
+    background-image: url("files/bgi.jpg");
+    padding: 40px 50px;
+    color: white;
+    text-shadow: 1px 0px;
+}
+
+/* 3.목차 */
+nav {
+    background-color: lightslategray;
+    padding: 5px;
+}
+
+nav ol {
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    width: 160px;
+    vertical-align: top;
+    padding: 5px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+nav li:hover {
+    background-color: lightgrey;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* 4.본문 */
+section {
+    background-color: aqua;
+    padding: 20px;
+}
+
+#교육목표 h4 {
+    padding: 0 0 0 20px;
+}
+
+/* 바닥글 */
+footer {
+    background-color: lightcoral;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+}

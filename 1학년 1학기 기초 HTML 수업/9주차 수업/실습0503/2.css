@@ -1,0 +1,116 @@
+/* 페이지 영역 */
+body {
+    width: 800px;
+    margin: 10px auto;
+}
+
+/* 제목 */
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+/* 목차 */
+nav {
+    background-color: gray;
+    padding: 10px;
+}
+
+nav ol {
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    width: 230px;
+    vertical-align: top;
+    padding: 5px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+nav li:hover {
+    background-color: lightgray;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* 본문 */
+section {
+    background-color: aqua;
+    padding: 5px 20px;
+}
+
+footer {
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* 문제2--------------------------- */
+/* 텍스트 효과 */
+article h3 {
+    text-shadow: 2px 2px blue;
+}
+
+article span {
+    text-shadow: 1px 1px red;
+    font-weight: 900;
+}
+
+/* 리스트 효과 */
+#장점 ol {
+    list-style-type: decimal-leading-zero;
+}
+
+#자격증 ol {
+    list-style-type: upper-roman;
+}
+
+/* 전공동아리 */
+td {
+    width: 33%;
+    padding: 5px 10px;
+    vertical-align: top;
+}
+
+#tr1 td {
+    background-color: gray;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#tr2 td {
+    background-color: lightgrey;
+    border: 1px solid black;
+}
+
+#tr3 td {
+    border-left: 1px dotted black;
+    border-right: 1px dotted black;
+    border-bottom: 1px dotted black;
+}
+
+/* 구분선 */
+div.구분선 {
+    width: 400px;
+    margin: auto;
+}
+
+div.구분선 > hr {
+    width: 180px;
+    display: inline-block;
+    vertical-align: middle;
+}

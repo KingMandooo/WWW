@@ -1,0 +1,60 @@
+/* 페이지 영역 */
+body {
+    width: 800px;
+    margin: 10px auto;
+}
+
+/* 제목 */
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+/* 목차 */
+nav {
+    background-color: gray;
+    padding: 10px;
+}
+
+nav ol {
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    width: 230px;
+    vertical-align: top;
+    padding: 5px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+nav li:hover {
+    background-color: lightgray;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* 본문 */
+section {
+    background-color: aqua;
+    padding: 5px 20px;
+}
+
+footer {
+    background-color: lightcoral;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+}
