@@ -1,0 +1,103 @@
+body {
+    width: 700px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    background-color: green;
+    padding: 5px;
+}
+
+section {
+    background-color: aqua;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: lightcoral;
+    padding: 5px;
+}
+
+article {
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+#sun_건학이념 {
+    text-align: center;
+    font-size: 25px;
+    background-color: blue;
+    color:white;
+}
+
+#sun_교육목적,
+#sun_교육목표, 
+#sun_인재상 {
+    border: 1px solid blue;
+}
+
+#sun_핵심역량 > div {
+    border: 1px solid red;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+}
+
+#sun_핵심역량 {
+    width: 540px;
+    margin: 10px auto;
+}
+
+
+/* .f0 {
+    background-color: blue;
+    color: white;
+}
+
+.f2{
+    border: 1px solid blue;
+}
+
+.f3{
+    border: 1px solid blue;
+}
+
+.f4{
+    border: 1px solid blue;
+}
+
+.f5{
+    border: 1px solid blue;
+}
+
+.f6{
+    border: 1px solid blue;
+} */
+
+
+
+
+
+
+/* nav {
+    background-color: green;
+}
+
+section{
+    background-color: aqua;
+}
+
+
+
+footer{
+    background-color: lightcoral; 
+    width: 1000px;
+    margin: auto;
+} */

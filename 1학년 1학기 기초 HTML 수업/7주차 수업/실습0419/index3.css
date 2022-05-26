@@ -1,0 +1,154 @@
+body {
+    width: 700px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue; 
+    color: yellow;
+}
+
+nav {
+    background-color: green;
+    padding: 5px;
+}
+
+section {
+    background-color: aqua;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    background-color: lightcoral;
+    padding: 5px;
+}
+
+article {
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+#sun_건학이념 {
+    text-align: center;
+    font-size: 25px;
+    background-color: blue;
+    color:white;
+}
+
+#sun_교육목적,
+#sun_교육목표, 
+#sun_인재상 {
+    border: 1px solid blue;
+}
+
+#sun_핵심역량 > div {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    border-radius: 55px;
+}
+
+#sun_핵심역량 {
+    width: 580px;
+    margin: 10px auto;
+}
+
+#sun_d1 {
+    border: 5px solid red;
+}
+
+#sun_d2 {
+    border: 5px solid gray;
+}
+
+#sun_d3 {
+    border: 5px solid blue;
+}
+
+#sun_d4 {
+    border: 5px solid darkgrey;
+}
+
+#sun_d5 {
+    border: 5px solid lightskyblue;
+}
+
+#sun_핵심역량 > div:hover {
+    text-shadow: 2px 2px 5px yellow;
+    box-shadow: 2px 2px 5px yellow;
+}
+/* 메뉴 */
+nav ul { 
+    text-align: center;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav li:hover{
+    background-color: lightgreen;
+}
+
+nav a:hover {
+    color:black;
+}
+
+/* sun_교육목표 */
+
+#sun_교육목표 > div {
+    /*border: 1px solid black;*/
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    margin: 1.1%;
+    border-left: 1px solid aqua;      /* 이렇게 하면 글씨가 안흔들림*/
+    border-right: 1px solid aqua;
+    border-bottom: 1px solid aqua;
+}
+
+#sun_교육목표 > div:hover {
+    border-left: 1px solid skyblue;
+    border-right: 1px solid skyblue;
+    border-bottom: 1px solid skyblue;
+}
+
+#sun_div1 {
+    border-top: 5px solid red;
+}
+
+#sun_div2 {
+    border-top: 5px solid skyblue;
+}
+
+#sun_div3 {
+    border-top: 5px solid green;
+}
+
+/* 인재상 */
+
+#sun_인재상 {
+    text-align: center;
+}
+
+#sun_p1 {
+    font-size: 22px;
+}
+
+#sun_span {
+    font-size: 45px;
+}

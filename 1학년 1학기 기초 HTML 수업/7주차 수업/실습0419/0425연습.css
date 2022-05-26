@@ -1,0 +1,168 @@
+body {
+    width: 900px;
+    margin: auto;
+}
+
+header {
+    font-weight: bold;
+    text-align: center;
+    color: yellow;
+    text-shadow: 2px 2px darkblue, 0 0 25px blue, 0 0 25px black;
+}
+
+nav {
+    background-color: green;
+    padding: 1px;
+}
+
+section {
+    background-color: aqua;
+    padding: 15px;
+}
+
+footer {
+    background-color: lightcoral;
+    padding: 5px;
+    text-align: center;
+}
+
+/* 목차 */
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+li > a:visited {
+    color: white;
+}
+
+ul > li {
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    width: 80px;
+}
+
+ul > li:hover {
+    background-color: greenyellow;
+}
+
+li > a:hover {
+    color:black;
+}
+
+
+/* 건학이념 */
+#sun_건학이념{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-size: 25px;
+}
+
+/* 교육목적 */
+#sun_교육목적 {
+    border: 1px solid blue;
+    margin: 5px;
+    padding: 20px;
+}
+
+/* 교육목표 */
+#sun_교육목표 {
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+#sun_교육목표 div {
+    display: inline-block;
+    width: 260px;
+    text-align: left;
+    vertical-align: top;
+    margin: 5px;
+    border-bottom: 1px solid aqua;
+    border-right: 1px solid aqua;
+    border-left: 1px solid aqua;
+}
+
+#e1 {
+    border-top: 3px solid red;
+}
+
+#e2 {
+    border-top: 3px solid grey;
+}
+
+#e3 {
+    border-top: 3px solid green;
+}
+
+#sun_교육목표 div:hover {
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+/* 인재상 */
+#sun_인재상 {
+    border: 1px solid blue;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+#sun_인재상 p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p > span {
+    font-size: 50px;
+    display: block;
+}
+
+/* 핵심역량 */
+#sun_핵심역량 {
+    text-align: center;
+    padding: 20px;
+}
+
+#sun_핵심역량 div {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    padding: 45px 20px;
+    border-radius: 75px;
+}
+
+#h1 {
+    border: 5px solid red;
+}
+
+#h2 {
+    border: 5px solid gray;
+}
+
+#h3 {
+    border: 5px solid blue;
+}
+
+#h4 {
+    border: 5px solid grey;
+}
+
+#h5 {
+    border: 5px solid palevioletred;
+}
+
+#sun_핵심역량 div:hover {
+    text-shadow: 2px 2px 5px yellow;
+    box-shadow: 2px 2px 5px yellow;
+}
