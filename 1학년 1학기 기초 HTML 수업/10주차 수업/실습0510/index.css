@@ -1,0 +1,136 @@
+body {
+    width: 800px;
+    margin: auto;
+    text-align: justify;
+}
+
+header > h1 {
+    text-align: center;
+    text-shadow: 0 1px 3px plum, 0 5px 5px purple, 0 0 1px fuchsia;
+}
+
+header, footer { 
+    animation-name: title;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+article {
+    margin: 15px 0px;
+}
+
+p {
+    font-family: 궁서, "Times New Roman", Serif;
+}
+
+div {
+    font-style: italic;
+}
+
+/* 특수 효과 */
+@keyframes title {
+    from { color: firebrick; }
+    50% { color: darkslateblue; } 
+    to { color: firebrick; }   
+}
+
+#스펀지밥1:hover {
+    transform: scale(3,3);
+}
+
+#스펀지밥2:hover {
+    transform: scale(3,3) rotate(60deg);
+}
+
+#스펀지밥3:hover {
+    transform: rotate(30deg)
+}
+
+/* 목차 */
+nav > ul {
+    list-style: none;
+    background-color: grey;
+    border-radius: 0px 30px;
+    text-align: center;
+}
+
+ul li {
+    font-size: 20px;
+    display: inline-block;
+    padding: 15px;
+}
+
+li > a {
+    text-decoration: none;
+    color: white
+}
+
+/* 소제목 */
+#history {
+    float: left;
+    width: 2em;
+    padding: 0.2em;
+    margin: 0em;
+    text-shadow: 5px 1px 3px gold;
+}
+
+#android {
+    float: left;
+    width: 5em;
+    padding: 0.2em;
+    margin: 0em;
+    text-shadow: 5px 1px 3px gold;
+}
+
+#iphone {
+    float: left;
+    width: 3em;
+    padding: 0.2em;
+    margin: 0em;
+    text-shadow: 5px 1px 3px gold;
+}
+
+/* 역사 */
+#스펀지밥1 {
+    float: right;
+    width: 7em;
+    padding: 0.2em;
+    margin: 0em;
+}
+
+/* 안드로이드 */
+#스펀지밥2 {
+    float: right;
+    width: 7em;
+    padding: 0.2em;
+    margin: 0em;
+}
+
+/* 아이폰 */
+#스펀지밥3 {
+    float: right;
+    width: 7em;
+    padding: 0.2em;
+    margin: 0em;
+}
+
+/* 스마트폰 샘플 */
+fieldset {
+    text-align: center;
+    font-weight: bold;
+    font-size: 130%;
+    padding: 20px 20px 10px 20px;
+}
+
+.phone:hover {
+    transform: rotate(30deg);
+}
+
+/* footer */
+footer {
+    background-color: grey;
+    border-radius: 0px 30px;
+    text-align: center;
+    padding: 1px;
+    margin: 15px 0;
+}

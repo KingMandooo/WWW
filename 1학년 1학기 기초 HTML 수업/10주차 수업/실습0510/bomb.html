@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>애니메이션</title>
+<style>
+  @keyframes bomb {
+    0% { font-size : 100%;}
+    50% { font-size : 500%;}
+    100% { font-size : 100%;}
+  }
+  h3 {
+    animation-name : bomb;
+    animation-duration : 6s;
+    animation-iteration-count : infinite;
+  }
+  h2 {
+    transition: color 5s;
+    color: red;
+  }
+  </style>
+</head>
+
+<body>
+  <h3>꽝!</h3>
+  <hr>
+  <h2>변환</h2>
+</body>
+</html>
