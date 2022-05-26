@@ -172,7 +172,7 @@ function out(obj) {
        --> confirm() 함수는 '메시지'와 확인/취소 (ok/cancel) 버튼을 가진 다이얼로그를 출력한다.
            사용자가 확인 버튼을 누르면 true, 취소 버튼이나 강제로 다이얼로그를 닫으면 false를 리턴한다.
            
-         let ret == confirm("전송할까요?")
+         let ret = confirm("전송할까요?")
          if (ret == true)
          {
             // 사용자가 "확인" 버튼을 누른 경우
