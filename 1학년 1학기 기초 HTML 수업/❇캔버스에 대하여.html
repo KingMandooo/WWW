@@ -91,8 +91,8 @@ ctx.fill();
     <title>Document</title>
     <script>
         function drawRect() {
-            var myCanvas = document.getElementById("myCanvas");
-            var ctx = myCanvas.getContext("2d");
+            var myCanvas = document.getElementById("myCanvas");  // 어떤 도화지에 그림을 그릴지
+            var ctx = myCanvas.getContext("2d"); // 2D 펜
 
             ctx.fillRect(25, 25, 100, 100); // 지정된 곳에 안이 꽉찬 네모를 만들어줌
             ctx.clearRect(45, 45, 60, 60);  // 지정된 곳에 투명한 네모를 만들어줌
