@@ -1,3 +1,89 @@
+var myCanvas = document.getElementById("myCanvas");
+var ctx = myCanvas.getContext("2d");
+
+var myCanvas는 document.getElementById() 메서드를 통해 DOM을 검색한 거고,
+var ctx는 getContext() 메서드를 통해 CanvasRenderingContext2D를 얻은 것이다.
+                                                                   (사실 무슨 뜻인지 모르겠다..)
+
+
+💙캔버스 그리기 : 직사각형💙
+
+* fillRect (x, y, width, height) // 색칠된 직사각형을 그린다.
+
+* strokeRect (x, y, width, height) // 직사각형 윤곽선을 그린다.
+
+* clearRect (x, y, width, height) // 특정 부분을 지운 직사각형을 그린다.
+
+
+💙캔버스 그리기 : path💙
+
+* beginPath() // 새로운 path를 만든다.
+
+* closePath() // path를 닫는다.
+
+* stroke() // 윤곽선을 이어 도형을 그린다.
+
+* fill() // path 내부를 채운다.
+
+ path 사용법 : path를 열고 - path 커맨드로 그리고 - path를 닫고
+  
+* moveTo(x, y)  // 펜을 지정된 x, y 좌표로 옮긴다.
+
+* lineTo(x, y)  // 현재의 드로잉 위치에서 x와 y로 설정된 좌표점까지 연결하는 선을 그린다.
+
+ctx.beginPath();   // 시작
+ctx.moveTo(30, 30);
+ctx.lineTo(80, 30);
+ctx.lineTo(40, 60);
+ctx lineTo(60, 10);
+ctx lineTo(70, 60);
+ctx lineTo(30, 30);
+ctx.closePath();  // 끝
+ctx.stroke();   // 선 채우기
+
+
+💙캔버스 그리기 : 원형💙
+
+* arc(x, y, radius, startAngle, endAngle, anticlockwise)
+  
+  // 중심점 x, 중심점 y, 반지름의 길이, 시작점의 위치(0은 3시 방향), 종료 위치, 방향
+
+arc(x, y, radius, startAngle, endAngle, clockwise)
+
+- x, y : 원을 그리게 될 가운데 위치
+- radius : 반지름 값
+- startAngle : angle 시작점
+- endAngle : angle 끝나는 점
+- clockwise : 옵션값. 시계 또는 반시계 방향을 결정함(기본값 false인 시계 방향)
+
+    ctx.beginPath();
+    ctx.arc(50, 50, 30, 0, Math.PI * 2, true);
+    ctx.stroke();
+
+
+💙캔버스 칠하기 : 색상 적용💙
+
+* fillStyle = "color"   // 도형의 채우는 색을 설정
+
+* strokeStyle = "color"  // 도형의 윤곽선 색을 설정
+
+ctx.arc(50, 75, 50, 0, Math.PI * 2, true);
+ctx.strokeStyle = "red";       <-- 이렇게 중간에 있어야함.
+ctx.stroke();
+
+ctx.beginPath();
+ctx.moveTo(100, 100);
+ctx.arc(150, 100, 50, 0, Math.PI * 2, true);
+ctx.fillStyle = "yellow";
+ctx.fill();
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,3 +133,7 @@
     <canvas id="myCanvas" width="200px" height="200px" style="border: 1px solid black"></canvas>
 </body>
 </html>
+
+
+
+
