@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function drawRect() {
+            var myCanvas = document.getElementById("myCanvas");
+            var ctx = myCanvas.getContext("2d");
+
+            ctx.fillRect(25, 25, 100, 100); // 지정된 곳에 안이 꽉찬 네모를 만들어줌
+            ctx.clearRect(45, 45, 60, 60);  // 지정된 곳에 투명한 네모를 만들어줌
+            ctx.strokeRect(50, 50, 50, 50);  // 선으로만 이루어진 네모를 그림
+
+            ctx.beginPath();
+            ctx.arc(75, 75, 50, 0, Math.PI * 2, true);
+            // 중심점 x, 중심점 y, 반지름의 길이, 시작점의 위치(0은 3시 방향), 종료 위치, 방향
+            
+            ctx.moveTo(110, 75);
+            ctx.arc(75, 75, 35, 0, Math.PI, false);
+
+            ctx.moveTo(65, 65);
+            ctx.arc(60, 65, 5, 0, Math.PI * 2, true);
+            
+            ctx.moveTo(95, 65);
+            ctx.arc(90, 65, 5, 0, Math.PI * 2, true);
+
+            ctx.stroke();
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(25, 25);
+            ctx.lineTo(105, 25);
+            ctx.lineTo(25, 105);
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(125, 125);
+            ctx.lineTo(125, 45);
+            ctx.lineTo(45, 125);
+            ctx.closePath();  // 완전히 이어줌
+            ctx.stroke();
+        }
+    </script>
+</head>
+<body onload="drawRect()">   <!-- drawRect() 함수 호출 -->
+    <canvas id="myCanvas" width="200px" height="200px" style="border: 1px solid black"></canvas>
+</body>
+</html>
