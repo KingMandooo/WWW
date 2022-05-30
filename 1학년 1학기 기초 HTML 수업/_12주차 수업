@@ -371,7 +371,37 @@ function f() {
        let res2 = (name > "park")  //  res2 = false. "kitae" 가 "park" 보다 영어사전에서 앞에 있음 (사전에서 먼저 나오면 작은 것이다.   ABCDEFGHIJKLMNOPQRSTUVWXYZ)
      
 
+🟡 조건문
 
+🟢 if 문
+
+🟢 if-else 문
+
+🟢 다중 if-else 문
+
+🟢 switch 문
+
+🟡 반복문
+
+🟢 for 문
+
+🟢 while 문
+
+🟢 do-while 문
+
+🟢 break 문
+
+🟢 continue 문
+
+🟡 함수
+
+🟢 함수 개념
+
+🟢 함수의 구성
+
+🟢 함수 호출
+
+🟢 자바스크립트의 전역 함수
 
 
 
