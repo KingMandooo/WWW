@@ -51,6 +51,5 @@ function 선태욱() {
     vcanvas = document.getElementById("myCountry");
     ctx = vcanvas.getContext("2d");
 
-    태극();
     setInterval(loop, 33);
 }
