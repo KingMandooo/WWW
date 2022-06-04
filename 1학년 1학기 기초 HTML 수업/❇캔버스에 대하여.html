@@ -135,5 +135,78 @@ ctx.fill();
 </html>
 
 
+------------------------------
+
+* save()  :  캔버스의 전체 상태를 저장
+* restore()  :  가장 최근에 저장된 
+
+<style>
+canvas {
+  width: 300px;
+  height:250px;
+  border: 1px solid black;
+}
+</style>
+<canvas id="mycanvas"/>
+
+<script type="text/javascript">
+var canvas = document.getElementById('mycanvas');
+canvas.width = 300;
+canvas.height = 300;
+var context = canvas.getContext('2d');
+
+// 첫 번째 설정 값 저장
+context.fillStyle = 'red'; 
+context.save();
+
+// 두 번째 설정 값 저장
+context.fillStyle = 'blue'; 
+context.save();
+
+// 세 번째 설정 값 저장
+context.fillStyle = 'yellow';
+context.save();
+
+// 네 번째 설정 값
+context.fillStyle = 'black';
 
 
+// 검정색을 그림
+// restore()로 세 번째 설정 값 불러오기
+context.beginPath();
+context.fillRect(0,10,30,30);
+context.restore();
+
+// 노랑색을 그림
+// restore()로 두 번째 설정 값 불러오기
+context.beginPath();
+context.fillRect(50,10,30,30);
+context.restore();
+
+// 파랑색을 그림
+// restore()로 첫 번째 설정 값 불러오기
+context.beginPath();
+context.fillRect(100,10,30,30);
+context.restore();
+
+// 빨간색을 그림
+// restore()로 이전 설정 값 불러오기
+// 이전 설정 값이 없으면 첫 번째 설정 값 불러오기
+context.beginPath();
+context.fillRect(150,10,30,30);
+context.restore();
+
+// 빨간색을 그림
+// restore()로 이전 설정 값 불러오기
+// 이전 설정 값이 없으면 첫 번째 설정 값 불러오기
+context.beginPath();
+context.fillRect(200,10,30,30);
+context.restore();
+
+// 빨간색을 그림
+// 이전 설정 값이 없으면 첫 번째 설정 값 불러오기
+context.beginPath();
+context.fillRect(250,10,30,30);
+</script>
+
+                                  출처: https://www.habonyphp.com/2021/01/save-restore.html
