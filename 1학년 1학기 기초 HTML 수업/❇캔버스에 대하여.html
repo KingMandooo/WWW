@@ -214,3 +214,20 @@ context.fillRect(250,10,30,30);
 </script>
 
                                   출처: https://www.habonyphp.com/2021/01/save-restore.html
+
+
+function makeColor1() {
+    var x, y, z;
+    
+    x = Math.floor(Math.random() * 256);    -->   0 <= random <= 255
+    y = Math.round(Math.random() * 255);    -->  0 <= random <= 254
+    z = Math.floor(Math.random() * 255) + 1;    -->  1 <= random <= 255
+   
+    return "rgb(" + x + "," + y + "," + z + ")";
+}
+
+* Math.floor()  : 소수점 첫째 자리 이후의 숫자를 버림하고, 정수를 리턴한다.
+* Math.random() : 0 ~ 1 사이의 실수를 리턴한다. (1 미포함)
+
+* Math.floor(Math.random() * 10) :  0 ~ 10 사이의 실수를 리턴하지만 (10 미포함)
+                                    소수점 첫째자리 이후의 숫자를 버림하고, 정수를 리턴한다.
