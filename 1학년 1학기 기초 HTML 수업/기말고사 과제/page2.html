@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>학습노트 3장</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+	<header id="main">
+		<h1>학습노트 3장</h1>
+	</header>
+
+	<nav id="mainnav">
+		<ol>
+			<li><a href="index.html">홈페이지</a></li>
+			<li><a href="page0.html">학습 노트 1장</a></li>
+			<li><a href="page1.html">학습 노트 2장</a></li>
+			<li><a href="page2.html">학습 노트 3장</a></li>
+			<li><a href="page3.html">학습 노트 4장</a></li>
+			<li><a href="myCanvas.html">My Canvas</a></li>
+			<li><a href="표창.html">표창</a></li>
+			<li><a href="굴러가는 돌.html">굴러가는 돌</a></li>
+			<li><a href="랜덤 태극기.html">랜덤 칼라 태극기</a></li>
+		</ol>
+	</nav>
+
+	<section id="mainsect">
+
+		<!-- ========================= section 안에 section을 넣어준다. ============================== -->
+		<header id="top">
+			<h2>HTML5 문서 구조화와 웹 폼</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#구조화">HTML5의 문서 구조화</a></li>
+				<li><a href="#웹폼">웹 폼</a></li>
+				<li><a href="#만들기">폼 만들기</a></li>
+			</ul>
+			<a href="#top"><img src="img/arrow.png" width="30px"></a>
+		</nav>
+		<section>
+			<article id="구조화">
+				<fieldset>
+					<legend>
+						<h2>HTML5의 문서 구조화</h2>
+					</legend>
+
+					<p>
+					<h3>&lt;header></h3>
+					--> 페이지나 섹션의 머리말을 표현하는 태그이다.
+					보통 머리말에는 페이지 제목, 페이지를 소개하는 간단한 설명이 들어간다.
+					</p>
+
+					<p>
+					<h3>&lt;nav></h3>
+					--> navigation의 줄임말로 하이퍼링크들을 모아 놓는 특별한 섹션이다.
+					페이지의 모든 하이퍼링크가 이곳에 있을 필요는 없다. 페이지 내 목차를 만들기 위해 주로 사용된다.
+					</p>
+
+					<p>
+					<h3>&lt;section></h3>
+					--> 문서의 장 혹은 절을 구성하는 역할을 한다.
+					책의나 보고서에 여러 장이 있는 것 처럼, 웹 페이지에도 여러 &lt;section>을 둘 수 있다.
+					헤딩 태그로 섹션의 주제를 기재하는 것이 바람직하다.
+					</p>
+
+					<p>
+					<h3>&lt;article></h3>
+					--> 본문과 연관되어 있지만, 독립적인 콘텐츠를 담는 영역이다.
+					보조적인 기사, 블로그 포스트 등 웹페이지의 본질을 훼손하지 않으면서 독립적인 내용을 담는 영역이다.
+					</p>
+
+					<p>
+					<h3>&lt;aside></h3>
+					--> 웹 페이지 본문 흐름에서 약간 벗어난 노트나 팁, 신문, 잡지에서 주요 기사 옆에 짤막하게 곁들이는 관련 기사 등을 담는 태그이다.
+					주로 페이지의 오른쪽이나 윈쪽에 주로 배치된다.
+					</p>
+
+					<p>
+					<h3>&lt;footer></h3>
+					--> 페이지나 &lt;section> 내에 꼬리말을 담는다. 이곳에는 저자나 저작권 정보 등을 주로 표시한다.
+					&lt;header>와 &lt;footer>가 꼭 웹 페이지의 서두와 말미에 배치될 필요는 없다.
+					</p>
+
+					<ul>
+						<li>팁들 !!</li>
+						<ul>
+							<li>웹 페이지 전체를 시맨틱 태그들로 분활한다.</li>
+							<li>웹 페이지 전체 제목과 소개는 &lt;header>로 작성한다.</li>
+							<li>본문은 &lt;section>으로 묶고, 본문 내에 각 절이나 영역은 &lt;article>로 작성한다.</li>
+							<li>링크나 메뉴들은 &lt;nav> 태그로 작성한다.</li>
+						</ul>
+					</ul>
+				</fieldset>
+			</article>
+
+			<article id="웹폼">
+				<fieldset>
+					<legend>
+						<h2>웹 폼</h2>
+					</legend>
+					<p>
+						웹 페이지를 통해 사용자가 입력을 받는 폼을 웹 폼(Webform) 혹은 폼(form)이라고 한다.
+						이러한 다양한 태그들을 폼 요소(form element)라고 부른다.
+						폼은 로그인, 등록, 검색, 예약, 쇼핑 등의 다양한 웹 서비스에서 사용자의 입력을 받기 위해 사용된다.
+					<h4>사용자에게 입력을 받는 태그를 "폼 요소"라고 한다.</h4>
+					</p>
+				</fieldset>
+			</article>
+
+			<article id="만들기">
+				<fieldset>
+					<legend>
+						<h2>폼 만들기</h2>
+					</legend>
+					<p>
+					<h3>텍스트 입력, &lt;input type="text|password"></h3>
+					&lt;input type="text|password"<br>
+					name="요소 이름"<br>
+					max length="문자 개수"<br>
+					size="문자 개수"<br>
+					value="초기 텍스트"><br>
+					</p>
+					<input type="text" name="요소 이름" max length="20" size="20" value="입력하시오.">
+
+					<p>
+					<h3>데이터 목록을 가진 텍스트 입력 창, datalist</h3>
+					&lt;input type="text" value="" maxlength="" size="" list="foods"> <br>
+					&lt;datalist id="foods"><br>
+					&lt;option value="떡볶이">&lt;/option><br>
+					&lt;option value="치킨">&lt;/option><br>
+					&lt;option value="감자그라탕">&lt;/option><br>
+					&lt;/datalist> <br>
+					</p>
+					<input type="text" list="foods">
+					<datalist id="foods">
+					<option value="떡볶이"></option>
+					<option value="치킨"></option>
+					<option value="감자그라탕"></option>
+					</datalist> 
+
+					<p>
+					<h3>체크박스 만들기, &lt;input type="checkbox"></h3>
+					만두&lt;input type="checkbox" value="1"> <br>
+					어묵&lt;input type="checkbox" value="2"> <br>
+					순대&lt;input type="checkbox" value="3"><br>
+					</p>
+					만두<input type="checkbox" value="1">
+					어묵<input type="checkbox" value="2">
+					순대<input type="checkbox" value="3">
+
+
+					<p>
+					<h3>라디오버튼 만들기, &lt;input type="radio"></h3>
+					&lt;input type="radio" value="1" name="food>짜장면<br>
+					&lt;input type="radio" value="2" name="food>짬뽕<br>
+					&lt;input type="radio" value="3" name="food>탕수육<br>
+					</p>
+					<input type="radio" value="1" name="food">짜장면
+					<input type="radio" value="2" name="food">짬뽕
+					<input type="radio" value="3" name="food">탕수육
+
+					<p>
+					<h3>콤보박스 만들기, select</h3>
+					&lt;select name="한식" size="2" multiple><br>
+					&lt;option value="1">김치찌개&lt;/option><br>
+					&lt;option value="2">된장찌개&lt;/option><br>
+					&lt;option value="3">삼계탕&lt;/option><br>
+					&lt;option value="4">비빔밥&lt;/option><br>
+					&lt;/select><br>
+					</p>
+					<select name="한식" size="1" multiple>
+					<option value="1">김치찌개</option>
+					<option value="2">된장찌개</option>
+					<option value="3">삼계탕</option>
+					<option value="4">비빔밥</option>
+					</select>
+
+					<p>
+					<h3>선택형 요소의 캡션을 &lt;label>로 감싸기</h3>
+					&lt;label><br>
+					&lt;input type="radio" name="dog" value="1"> 귀엽다 &lt;img src="files/귀여운.jpg" width="50"><br>
+					&lt;/label><br>
+					<br>
+					&lt;label><br>
+					&lt;input type="radio" name="dog" value="1"> 이쁘다 &lt;img src="files/이쁜.png" width="50"><br>
+					&lt;/label><br>
+					<br>
+					&lt;label><br>
+					&lt;input type="radio" name="dog" value="1"> 사랑스럽다 &lt;img src="files/사랑스러운.jpg" width="50"><br>
+					&lt;/label><br>
+					<br>
+					&lt;label><br>
+					&lt;input type="radio" name="dog" value="1"> 멋지다 &lt;img src="files/멋진.jpg" width="50"><br>
+					&lt;/label> <br>
+					<br>
+					</p>
+						<label>
+							<input type="radio" name="dog"> 귀엽다 <img src="files/귀여운.jpg" width="50">
+						</label>
+						<label>
+							<input type="radio" name="dog"> 이쁘다 <img src="files/이쁜.png" width="50">
+						</label>
+						<label>
+							<input type="radio" name="dog"> 사랑스럽다 <img src="files/사랑스러운.jpg" width="50">
+						</label>
+						<label>
+							<input type="radio" name="dog"> 멋지다 <img src="files/멋진.jpg" width="50">
+						</label>
+				</fieldset>
+			</article>
+		</section>
+	</section>
+</body>
+
+</html>

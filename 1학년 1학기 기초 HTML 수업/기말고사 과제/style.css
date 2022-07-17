@@ -1,0 +1,61 @@
+header{
+    padding:20px;
+}
+
+nav ul {
+	margin : 0 20px ;
+	padding : 0;
+    background : gray;
+    line-height: 10px;
+    border-radius : 0 20px;
+	text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+	list-style-type : none;
+	padding : 10px 20px;
+}
+
+nav ul li:hover {
+ 	background-color : darkgray;
+}
+
+nav a {
+  	text-decoration : none;
+}
+nav ul li a:hover {
+ 	color : black;
+}
+
+h2 {
+    text-shadow : 3px 3px 5px skyblue;
+    color : blue;	
+}
+
+section {
+	margin: 0 20px;
+}
+
+article {
+    padding:20px 0;
+}
+
+a img {
+	position: fixed;
+	bottom: 10px;
+	right: 0px;
+}
+
+legend {
+	padding: 0 10px;
+}
+
+fieldset > ul {
+    list-style-type: square;
+}
+
+fieldset > ul > li > ul {
+    padding: 10px 10px 10px 50px;
+    list-style-image: url(img/Marker-24x24.png);
+}

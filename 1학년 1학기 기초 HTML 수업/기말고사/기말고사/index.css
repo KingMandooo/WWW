@@ -1,0 +1,38 @@
+header#main {
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+nav#mainnav {
+    float: left;
+    padding: 20px;
+}
+
+nav#mainnav > ol {
+    padding: 0;
+}
+
+nav#mainnav > ol > li {
+    list-style: none;
+    padding: 10px;
+}
+
+nav#mainnav > ol > li:hover {
+    background-color: gray;
+}
+
+nav#mainnav > ol > li > a {
+    text-decoration: none;
+    
+}
+
+nav#mainnav > ol li > a:hover {
+    color: white;
+}
+
+section#mainsect {
+    border-left: 1px solid  black;
+    margin-left: 200px;
+    padding: 20px;
+}
+

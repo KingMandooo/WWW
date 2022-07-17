@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>학습노트 4장</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+
+	<header id="main">
+		<h1>학습노트 4장</h1>
+	</header>
+
+	<nav id="mainnav">
+		<ol>
+			<li><a href="index.html">홈페이지</a></li>
+			<li><a href="page0.html">학습 노트 1장</a></li>
+			<li><a href="page1.html">학습 노트 2장</a></li>
+			<li><a href="page2.html">학습 노트 3장</a></li>
+			<li><a href="page3.html">학습 노트 4장</a></li>
+			<li><a href="myCanvas.html">My Canvas</a></li>
+			<li><a href="표창.html">표창</a></li>
+			<li><a href="굴러가는 돌.html">굴러가는 돌</a></li>
+			<li><a href="랜덤 태극기.html">랜덤 칼라 태극기</a></li>
+		</ol>
+	</nav>
+
+	<section id="mainsect">
+
+		<!-- ========================= section 안에 section을 넣어준다. ============================== -->
+		<header id="top">
+			<h2>CSS3로 웹 페이지 꾸미기</h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#개요">CSS3 스타일 시트 개요</a></li>
+				<li><a href="#만들기">CSS3 스타일 시트 만들기</a></li>
+				<li><a href="#셀렉터">셀렉터</a></li>
+				<li><a href="#꾸미기">색과 텍스트 꾸미기</a></li>
+				<li><a href="#박스">박스 모델</a></li>
+				<li><a href="#효과">시각적 효과</a></li>
+			</ul>
+			<a href="#top"><img src="img/arrow.png" width="30px"></a>
+		</nav>
+		<section>
+			<article id="개요">
+				<fieldset>
+					<legend>
+						<h2>CSS3 스타일 시트 개요</h2>
+					</legend>
+					<p>
+						CSS(Cascading Style Sheet)는 HTML 문서에 색이나 모양, 출력 위치 등 외관을
+						꾸미는 언어이며, CSS로 작성된 코드를 스타일 시트(style sheet)라고 부른다.
+
+					<ul>
+						<li>색상과 배경</li>
+						<li>텍스트</li>
+						<li>폰트</li>
+						<li>박스 모델(Box Model)</li>
+						<li>비주얼 포맷 및 효과</li>
+						<li>리스트</li>
+						<li>테이블</li>
+						<li>사용자 인터페이스</li>
+					</ul>
+					</p>
+					<p>
+						<li>CSS3 스타일 시트 구성</li>
+						span { color : blue; font-size : 20px; } <br>
+						셀렉터 프로퍼티 값 프로퍼티 값
+					</p>
+				</fieldset>
+			</article>
+			<article id="만들기">
+				<fieldset>
+					<legend>
+						<h2>CSS3 스타일 시트 만들기</h2>
+					</legend>
+					<p>
+					<h3>&lt;style> 태그로 스타일 시트 만들기</h3>
+					&lt;style><br>
+					body {background-color:antiquewhite;}<br>
+					h1 {color:blueviolet; font-size:20px;}<br>
+					header { background-color: darkseagreen; text-align: center;}<br>
+					&lt;/style>
+
+					<h3>style 속성에 스타일 시트 만들기</h3>
+					&lt;h2 style="color:darkorange; font-size:25px;">나에 대하여&lt;/h2>
+
+					<h3>외부 스타일 시트 파일 불러오기</h3>
+					&lt;head><br>
+					&lt;link href="index.css" type="text/css" rel="stylesheet"><br>
+					&lt;/head><br>
+					</p>
+				</fieldset>
+			</article>
+			<article id="셀렉터">
+				<fieldset>
+					<legend>
+						<h2>셀렉터</h2>
+					</legend>
+					<p>
+					<h3>1. 태그 이름 셀렉터</h3>
+					h1, mark {color:blueviolet; font-size:20px;}
+
+					<h3>2. class 셀렉터 </h3>
+					&lt;style><br>
+					.weather {color:deepskyblue;}<br>
+					&lt;/style><br>
+					.<br>
+					.<br>
+					.<br>
+
+					&lt;caption class="weather">오늘의 날씨</caption><br>
+
+					<h3>3. id 셀렉터</h3>
+					&lt;style><br>
+					#profile {color:peru; background:rgb(78, 63, 50)}<br>
+					&lt;/style><br>
+					.<br>
+					.<br>
+					.<br>
+
+					&lt;caption id="profile">나의 신체정보</caption> <br>
+
+					<h3>4. class와 id의 차이점</h3>
+					<p>
+						id는 한요소에만 사용, class는 여러 요소에 중복 사용 가능하다.
+					</p>
+
+					<h3>5. 가상 클래스 셀럭터</h3>
+					<li>어떤 상황이 발생하였을 때만 적용하도록 CSS3 표준에서 만들어진 셀렉터이다.</li>
+					<li>li:hover {color: deeppink;} &lt;-- :hover를 붙여서 &lt;li> 태그에 마우스 커서를 올리면 deeppink로 색깔이 변한다.</li>
+					</p>
+				</fieldset>
+			</article>
+			<article id="꾸미기">
+				<fieldset>
+					<legend>
+						<h2>색과 텍스트 꾸미기</h2>
+					</legend>
+					<p>
+					<h3>16진수 코드로 색 표현</h3>
+					div { color : #8A2BE2; } &lt;-- 보라색 <br>
+					red green blue 순
+					<ul>
+						<li>색 관련 프로퍼티</li>
+						<ul>
+							<li>color : 색</li>
+							<li>background-color : 색</li>
+							<li>border-color : 색</li>
+						</ul>
+					</ul>
+					<div style="border: 5px solid red; color:yellow; background-color: blue;">
+						글자 색 : 노란색 <br>
+						배경 색 : 파란색 <br>
+						테두리 색 : 빨간색
+					</div>
+					</p>
+				</fieldset>
+			</article>
+			<article id="박스">
+				<fieldset>
+					<legend>
+						<h2>박스 모델</h2>
+					</legend>
+					<p>
+						CSS3에서 박스 모델(Box Model)이란 각 HTML 태그 요소를 하나의 박스로 보고, 박스의 크기, 박스 배경 색, 박스 여백 등 HTML 태그를 박스로 다루는
+						체계를 뜻한다.
+
+					<ul>
+						<li>박스의 구성</li>
+						<ul>
+							<li>콘텐츠: HTML 태그의 텍스트나 이미지 부분</li>
+							<li>패딩: 콘텐츠를 직접 둘러싸고 있는 내부 여백</li>
+							<li>테두리: 패딩 외부의 외곽선으로 직선이나 점선 혹은 이미지를 입힐 수 있음</li>
+							<li>여백: 박스의 맨 바깥 영역. 테두리 바깥 공간으로 아래위 인접한 태그와 만나는 공간</li>
+						</ul>
+					</ul>
+
+					div#선태욱 {<br>
+					border: 3px solid blue;<br>
+					padding: 30px;<br>
+					margin: 15px;<br>
+					}<br>
+					<div style="border: 5px solid gold; padding:20px; margin:20px;">
+						박스 모델 <br>
+						border: 5px solid gold; <br>
+						padding:20px; <br>
+						margin:20px;
+					</div>
+					</p>
+				</fieldset>
+			</article>
+			<article id="효과">
+				<fieldset>
+					<legend>
+						<h2>시각적 효과</h2>
+					</legend>
+					<p>
+						<h3>텍스트 그림자, text-shadow</h3>
+						#Home {<br>
+						text-shadow: 1px 2px 2px black;<br>
+						}<br>
+
+						그림자 텍스트 사이의 수평 거리, 수직 거리, 그림자가 흐릿하게 번지는 길이, 그림자 색 순.
+						</p>
+
+						<h2 id="visual">텍스트 그림자를 활용한 시각적 효과</h2>
+				</fieldset>
+			</article>
+		</section>
+	</section>
+</body>
+
+</html>
