@@ -1,4 +1,3 @@
-
 'use strict';
 var vcanvas, ctx;
 var x, y;
