@@ -7,7 +7,7 @@ function drawShip() {
         ctx.fillStyle = "green";
         ctx.fillRect(x + 10, y - 15, 10, 30);
     }
-    if (stype === 3) {
+    if (stype > 2) {
         ctx.fillStyle = "green";
         ctx.fillRect(x, y - 20, 10, 40);
     }
