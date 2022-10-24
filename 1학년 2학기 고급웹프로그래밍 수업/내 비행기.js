@@ -1,41 +1,15 @@
 function drawShip() {
-    if (stype === 0) {
-        if(bullet) {
-            ctx.fillStyle = "pink";
-            ctx.fillRect(x + 62, y - 2, 5, 4);
-        }
-    }
     if (stype === 1) {
         ctx.fillStyle = "green";
         ctx.fillRect(x + 40, y - 5, 20, 10);
-
-        if(bullet) { 
-            ctx.fillStyle = "pink";
-            ctx.fillRect(x + 62, y - 5, 5, 3);
-            ctx.fillRect(x + 62, y + 2, 5, 3);
-        }
     }
     if (stype > 1) {
         ctx.fillStyle = "green";
         ctx.fillRect(x + 10, y - 15, 10, 30);
- 
-        if(bullet) {
-            ctx.fillStyle = "pink";
-            ctx.fillRect(x + 62, y - 2, 5, 4);
-            ctx.fillRect(x + 22, y - 15, 5, 3);
-            ctx.fillRect(x + 22, y + 12, 5, 3);
-        }
     }
     if (stype === 3) {
         ctx.fillStyle = "green";
         ctx.fillRect(x, y - 20, 10, 40);
-
-        if(bullet) {
-            ctx.fillStyle = "pink";
-            ctx.fillRect(x + 62, y - 2, 5, 4);
-            ctx.fillRect(x + 12, y - 20, 5, 3);
-            ctx.fillRect(x + 12, y + 17, 5, 3);
-        }
     }
 
     ctx.beginPath();
