@@ -13,7 +13,9 @@ function clearCanvas() {
 
 function drawRect() {     // 움직이는 사각형 그리기
     ctx.beginPath();
+    ctx.fillStyle = 'gray';
     ctx.fillRect(rt2.x, rt2.y, rt2.w, rt2.h);
+    ctx.fillStyle = "black";
     
     if(hit_rt2_pt()) {
         ctx.fillStyle = "yellow";
