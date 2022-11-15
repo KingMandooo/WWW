@@ -16,7 +16,7 @@ function drawRect() {     // 움직이는 사각형 그리기
     ctx.fillStyle = 'gray';
     ctx.fillRect(rt2.x, rt2.y, rt2.w, rt2.h);
     ctx.fillStyle = "black";
-    
+
     if(hit_rt2_pt()) {
         ctx.fillStyle = "yellow";
         ctx.beginPath();
@@ -148,8 +148,16 @@ function hit_rt_rt2() {                   // 고정된 사각형과 움직이는
 }
 
 function stateInfo() {
-    if(hit_ct_pt() || hit_rt_pt() || hit_rt2_pt() || hit_rt_rt2()) {
-        ctx.fillText("상태: 충돌", 50, 700);
+    if(hit_ct_pt()) {
+        ctx.fillText("상태: 원-점 충돌", 50, 700);
+    } else if(hit_rt_pt()){
+        ctx.fillText("상태: 사각형-점 충돌", 50, 700);
+    }
+    else if( hit_rt2_pt()){
+        ctx.fillText("상태: 사각형2-점 충돌", 50, 700);
+    }
+    else if( hit_rt_rt2()){
+        ctx.fillText("상태: 사각형-사각형2 충돌", 50, 700);
     } else {
         ctx.fillText("상태: 안전", 50, 700);
     }
